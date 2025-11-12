@@ -6,5 +6,6 @@
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/configs" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/configs_cache" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../org.spartahub.gatewayserver" vcs="Git" />
   </component>
 </project>
