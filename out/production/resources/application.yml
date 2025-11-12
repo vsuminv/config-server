@@ -1,0 +1,60 @@
+#server:
+#  port: 3100
+#
+#spring:
+#  application:
+#    name: config-server
+#  profiles:
+#    active: git
+#  cloud:
+#    config:
+#      server:
+#        native:
+#          search-locations: 'file:///Users/leesumin/Documents/edu/spring-cloud-edu/project-config2'
+#        git:
+#          uri: https://github.com/vsuminv/project-configs2
+#          default-label: main
+#          search-paths:
+#            - configs
+#            - configs/*
+#          basedir: configs_cache
+#          clone-on-start: true
+#
+#eureka:
+#  client:
+#    register-with-eureka: true
+#    fetch-registry: true
+#    service-url:
+#      defaultZone: http://localhost:3150/eureka/
+
+server:
+  port: 3100
+
+spring:
+  application:
+    name: config-server
+  profiles:
+    active: git
+  cloud:
+    config:
+      server:
+        native:
+          search-locations: 'file:///Users/leesumin/Documents/edu/spring-cloud-edu/project-config2'
+        git:
+          uri: https://github.com/vsuminv/project-configs2
+          default-label: main
+          search-paths:
+            - configs
+            - configs/*
+          basedir: configs_cache
+          clone-on-start: true
+
+eureka:
+  instance:
+    prefer-ip-address: false
+    hostname: localhost
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:3150/eureka/
